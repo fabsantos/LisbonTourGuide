@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguideapp.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/learn_color">
+        <TextView
+            android:id="@+id/learn"
+            style="@style/TimeOfDayStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/learn_text" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fun_color">
+        <TextView
+            android:id="@+id/fun"
+            style="@style/TimeOfDayStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/fun_text" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shop_color">
+        <TextView
+            android:id="@+id/shop"
+            style="@style/TimeOfDayStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/shop_text" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/get_around_color">
+        <TextView
+            android:id="@+id/get_around"
+            style="@style/TimeOfDayStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/get_around_text" />
+    </FrameLayout>
+
+</LinearLayout>
