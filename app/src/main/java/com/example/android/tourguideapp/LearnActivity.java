@@ -13,17 +13,17 @@ public class LearnActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
 
-        //Creates the ArrayList of LearnObjects
-        ArrayList<LearnObject> learnPlaces = new ArrayList<LearnObject>();
+        //Creates the ArrayList of LearnFunObjects
+        ArrayList<LearnFunObject> learnPlaces = new ArrayList<LearnFunObject>();
         //Adds Learn Objects to the ArrayList
-        learnPlaces.add(new LearnObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
 
         //Creates an object of type LearnAdapter
-        LearnAdapter adapter = new LearnAdapter(this, learnPlaces);
+        LearnFunAdapter adapter = new LearnFunAdapter(this, learnPlaces);
         //Finds the list view where the items of the list will be displayed, that basically only
         //does the job of adding one item after the other.
         ListView listView = (ListView) findViewById(R.id.list_layout);

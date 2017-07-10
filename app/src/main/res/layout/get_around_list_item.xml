@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--This is the layout for each item in the list of Learn-->
+<!--This is the layout for each item in the list of Get Around -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/learn_list_item_root"
+    android:id="@+id/list_item_root"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/learn_color"
+    android:background="@color/get_around_color"
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/learn_item_name"
+        android:id="@+id/transport_name"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:gravity="center_vertical"
         tools:text="AAAAAAAAAAAAAAAAAA"/>
 
     <TextView
-        android:id="@+id/learn_item_address"
+        android:id="@+id/transport_operator"
         android:layout_width="match_parent"
         android:layout_height="22dp"
         tools:text="AAAAAAAAAAAAAAAAAA"/>
@@ -26,14 +27,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/learn_item_hours"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        tools:text="AAAAAAA"/>
+        <TextView
+            android:id="@+id/hours_of_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            tools:text="AAAAAAA"/>
 
         <TextView
-            android:id="@+id/learn_item_price"
+            android:id="@+id/ticket_price"
             android:layout_width="wrap_content"
             android:layout_height="22dp"
             tools:text="BBBBB"
@@ -41,5 +42,17 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/network_map"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:text="Network Map"/>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/bus_network_map"/>
 
 </LinearLayout>
