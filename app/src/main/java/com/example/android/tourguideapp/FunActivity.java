@@ -24,7 +24,7 @@ public class FunActivity extends AppCompatActivity {
         funPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
 
         //Creates an object of type LearnFunAdapter
-        LearnFunAdapter adapter = new LearnFunAdapter(this, funPlaces);
+        LearnFunAdapter adapter = new LearnFunAdapter(this, funPlaces, R.color.fun_color);
         //Finds the list view where the items of the list will be displayed, that basically only
         //does the job of adding one item after the other.
         ListView listView = (ListView) findViewById(R.id.list_layout);

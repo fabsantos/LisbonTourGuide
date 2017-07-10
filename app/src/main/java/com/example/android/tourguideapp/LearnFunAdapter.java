@@ -1,6 +1,7 @@
 package com.example.android.tourguideapp;
 
 import android.app.Activity;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,9 @@ import java.util.ArrayList;
  */
 
 public class LearnFunAdapter extends ArrayAdapter<LearnFunObject> {
+
+    //Variable that stores the list background color
+    private int mListColorResourceId;
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -47,13 +51,21 @@ public class LearnFunAdapter extends ArrayAdapter<LearnFunObject> {
         //Set the text on that view
         priceTextView.setText(currentLearnFunObject.getPrice());
 
+        // Set the theme color for the list item
+        View listText = listItemView.findViewById(R.id.list_item_root);
+        // Find the color that the resource ID maps to
+        int color = ContextCompat.getColor(getContext(), mListColorResourceId);
+        // Set the background color of the text container View
+        listText.setBackgroundColor(color);
+
         // Return the whole item
         return listItemView;
 
     }
 
-    public LearnFunAdapter (Activity context, ArrayList<LearnFunObject> learnFunPlaces){
+    public LearnFunAdapter (Activity context, ArrayList<LearnFunObject> learnFunPlaces, int color){
         super(context, 0, learnFunPlaces);
+        mListColorResourceId = color;
     }
 }
 

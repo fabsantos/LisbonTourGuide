@@ -10,7 +10,7 @@
     <!-- Primary dark color of the app (shown in the status bar) -->
     <color name="primary_dark_color">#DE5832</color>
 
-    <!-- Background color for app -->
+    <!-- Background color for the app -->
     <color name="tan_background">#FFF7DA</color>
 
     <!-- Learn in Lisbon Color -->
@@ -24,5 +24,6 @@
 
     <!-- Get Around in Lisbon Color -->
     <color name="get_around_color">#C5D86D</color>
+
 
 </resources>

@@ -35,7 +35,7 @@ public class LearnFunObject {
         mPrice = price;
     }
 
-    //Gets the name of the place
+    //Getters
     public String getName() {
         return mName;
     }
