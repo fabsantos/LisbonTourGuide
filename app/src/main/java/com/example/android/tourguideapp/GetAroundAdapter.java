@@ -17,13 +17,25 @@ import java.util.ArrayList;
 
 public class GetAroundAdapter extends ArrayAdapter<GetAroundObject> {
 
+    //Constructor
+    public GetAroundAdapter(Activity context, ArrayList<GetAroundObject> transports) {
+        // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
+        // the second argument is used when the ArrayAdapter is populating a single TextView.
+        // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
+        // going to use this second argument, so it can be any value. Here, we used 0.
+        super(context, 0, transports);
+
+    }
+
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, final View convertView, ViewGroup parent) {
         // Checks if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.get_around_list_item, parent, false);
+
+
         }
 
         //Get the GetAround Object in a given position
@@ -51,22 +63,15 @@ public class GetAroundAdapter extends ArrayAdapter<GetAroundObject> {
 
         //Find the view that will hold the network map image
         ImageView networkMapImageView = (ImageView) listItemView.findViewById(R.id.network_map);
+        //Make it gone so it only appears when clicked
+        networkMapImageView.setVisibility(View.VISIBLE);
         //Find the image that corresponds to the current object
         networkMapImageView.setImageResource(currentGetAroundObject.getNetworkMap());
 
-    //Return the whole list item
+        //Return the whole list item
         return listItemView;
     }
 
-    //Constructor
-    public GetAroundAdapter(Activity context, ArrayList<GetAroundObject> transports) {
-        // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
-        // the second argument is used when the ArrayAdapter is populating a single TextView.
-        // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
-        // going to use this second argument, so it can be any value. Here, we used 0.
-        super(context, 0, transports);
-
-    }
 
 }
 

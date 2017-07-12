@@ -14,16 +14,16 @@ public class LearnActivity extends AppCompatActivity {
         setContentView(R.layout.list);
 
         //Creates the ArrayList of LearnFunObjects
-        ArrayList<LearnFunObject> learnPlaces = new ArrayList<LearnFunObject>();
+        ArrayList<LearnFunEatObject> learnPlaces = new ArrayList<LearnFunEatObject>();
         //Adds Learn Objects to the ArrayList
-        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        learnPlaces.add(new LearnFunObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        learnPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
 
         //Creates an object of type LearnAdapter
-        LearnFunAdapter adapter = new LearnFunAdapter(this, learnPlaces, R.color.learn_color);
+        LearnFunEatAdapter adapter = new LearnFunEatAdapter(this, learnPlaces, R.color.learn_color);
         //Finds the list view where the items of the list will be displayed, that basically only
         //does the job of adding one item after the other.
         ListView listView = (ListView) findViewById(R.id.list_layout);

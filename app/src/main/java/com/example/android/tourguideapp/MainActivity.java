@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the Shop in Lisbon category
-        TextView shop = (TextView) findViewById(R.id.shop);
+        // Find the View that shows the Eat in Lisbon category
+        TextView shop = (TextView) findViewById(R.id.eat);
 
         // Set a click listener on that View
         shop.setOnClickListener(new View.OnClickListener() {
             // This will be executed when view is clicked on.
             @Override
             public void onClick(View view) {
-                Intent shopIntent = new Intent(MainActivity.this, ShopActivity.class);
+                Intent shopIntent = new Intent(MainActivity.this, EatActivity.class);
                 startActivity(shopIntent);
             }
         });

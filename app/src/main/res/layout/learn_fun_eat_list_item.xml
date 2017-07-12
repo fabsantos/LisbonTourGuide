@@ -1,65 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><!--This is the layout for each item in the list of Get Around -->
+<?xml version="1.0" encoding="utf-8"?><!--This is the layout for each item in the list of Learn and of Fun-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/get_around_color"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_vertical_margin">
 
     <TextView
-        android:id="@+id/transport_type"
+        android:id="@+id/item_name"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:gravity="center_vertical"
         android:textColor="@android:color/white"
-        tools:text="AAAAAAAAAAAAAAAAAA" />
-
-    <TextView
-        android:id="@+id/transport_operator"
-        android:layout_width="match_parent"
-        android:layout_height="22dp"
-        android:textColor="@android:color/white"
-        tools:text="AAAAAAAAAAAAAAAAAA" />
+        tools:text="Place Name" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_location_on_white_24dp" />
+
         <TextView
-            android:id="@+id/hours_of_operation"
+            android:id="@+id/item_address"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:textColor="@android:color/white"
+            tools:text="Address" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_watch_later_white_24dp" />
+
+        <TextView
+            android:id="@+id/item_hours"
             android:layout_width="wrap_content"
             android:layout_height="22dp"
             android:textColor="@android:color/white"
-            tools:text="AAAAAAA" />
+            tools:text="hours" />
+
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_euro_symbol_white_24dp" />
 
         <TextView
-            android:id="@+id/ticket_price"
+            android:id="@+id/item_price"
             android:layout_width="wrap_content"
             android:layout_height="22dp"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:textColor="@android:color/white"
-            tools:text="BBBBB" />
+            tools:text="price" />
 
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/see_network_map"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="See Network Map"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white" />
-
-    <ImageView
-        android:id="@+id/network_map"
-        android:layout_width="wrap_content"
-        android:layout_height="338dp"
-        tools:src="@drawable/bus_network_map" />
 
 </LinearLayout>

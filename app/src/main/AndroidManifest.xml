@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".LearnActivity"
             android:label="@string/learn_text"/>
-        <activity android:name=".ShopActivity"
+        <activity android:name=".EatActivity"
             android:label="@string/shop_text"/>
         <activity android:name=".GetAroundActivity"
             android:label="@string/get_around_text"/>

@@ -34,9 +34,9 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/shop_color">
+        android:background="@color/eat_color">
         <TextView
-            android:id="@+id/shop"
+            android:id="@+id/eat"
             style="@style/TimeOfDayStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/shop_text" />

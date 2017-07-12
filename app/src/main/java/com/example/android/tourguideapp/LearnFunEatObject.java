@@ -3,10 +3,10 @@ package com.example.android.tourguideapp;
 /**
  * Created by Fabiola on 06/07/2017.
  * This class defines the contents of a Learn Object. This will have a name, an address, operation hours and entry price.
- * {@link LearnFunObject}
+ * {@link LearnFunEatObject}
  */
 
-public class LearnFunObject {
+public class LearnFunEatObject {
 
     //Variable that will store the name of the place
     private String mName;
@@ -28,7 +28,7 @@ public class LearnFunObject {
      * @param hours The hours of operation
      * @param price The entry price
      */
-    public LearnFunObject (String name, String address, String hours, String price){
+    public LearnFunEatObject(String name, String address, String hours, String price){
         mName = name;
         mAddress = address;
         mHours = hours;
