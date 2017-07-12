@@ -17,7 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".LearnActivity"
-            android:label="@string/learn_text"/>
+            android:label="@string/learn_text">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
         <activity android:name=".EatActivity"
             android:label="@string/shop_text"/>
         <activity android:name=".GetAroundActivity"
@@ -25,6 +31,7 @@
         <activity android:name=".FunActivity"
             android:label="@string/fun_text">
         </activity>
+
     </application>
 
 </manifest>
