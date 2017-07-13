@@ -16,11 +16,11 @@ public class EatActivity extends AppCompatActivity {
         //Creates the ArrayList of LearnFunEatObjects
         ArrayList<LearnFunEatObject> eatPlaces = new ArrayList<LearnFunEatObject>();
         //Adds Objects to the ArrayList
-        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        eatPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
 
         //Creates an object of type LearnFunEatAdapter
         LearnFunEatAdapter adapter = new LearnFunEatAdapter(this, eatPlaces, R.color.eat_color);

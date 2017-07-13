@@ -17,11 +17,11 @@ public class FunActivity extends AppCompatActivity {
         //Creates the ArrayList of LearnFunEatObjects
         ArrayList<LearnFunEatObject> funPlaces = new ArrayList<LearnFunEatObject>();
         //Adds Objects to the ArrayList
-        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
-        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros"));
+        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
+        funPlaces.add(new LearnFunEatObject("Museu", "Rua Grande", "9 to five", "10 euros", ""));
 
         //Creates an object of type LearnFunEatAdapter
         LearnFunEatAdapter adapter = new LearnFunEatAdapter(this, funPlaces, R.color.fun_color);

@@ -20,6 +20,9 @@ public class LearnFunEatObject {
     //Variable that will store the entry price
     private String mPrice;
 
+    //Variable that will store the geolocation
+    private String mGeolocation;
+
 
     /**
      * Constructor
@@ -28,11 +31,12 @@ public class LearnFunEatObject {
      * @param hours The hours of operation
      * @param price The entry price
      */
-    public LearnFunEatObject(String name, String address, String hours, String price){
+    public LearnFunEatObject(String name, String address, String hours, String price, String geolocation){
         mName = name;
         mAddress = address;
         mHours = hours;
         mPrice = price;
+        mGeolocation = geolocation;
     }
 
     //Getters
@@ -51,4 +55,6 @@ public class LearnFunEatObject {
     public String getPrice() {
         return mPrice;
     }
+
+    public String getGeolocation() {return mGeolocation; }
 }
